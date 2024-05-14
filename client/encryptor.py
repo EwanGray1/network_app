@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>URL</key>
-	<string>https://github.com/EwanGray1/network_app/blob/main/Client/encryptor.py</string>
-</dict>
-</plist>
+from cryptography.fernet import Fernet
+
+class Encryptor:
+    def __init__(self):
+        self.key = Fernet.generate_key()
+        self.cipher_suite = Fernet(self.key)
+
+    def encrypt(self, data):
+        encrypted_data = self.cipher_suite.encrypt(data)
+        return encrypted_data, self.key
