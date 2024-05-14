@@ -1,4 +1,4 @@
-veimport socket
+import socket
 import json
 import xml.etree.ElementTree as ET
 import pickle
