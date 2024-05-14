@@ -1,10 +1,10 @@
-import socket
+veimport socket
 import json
 import xml.etree.ElementTree as ET
 import pickle
 import os
-from .logger import setup_logging
-from .config import Config
+from server.logger import setup_logging
+from server.config import Config
 from cryptography.fernet import Fernet
 
 # Setup logging
