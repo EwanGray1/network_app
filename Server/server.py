@@ -3,8 +3,8 @@ import json
 import xml.etree.ElementTree as ET
 import pickle
 import os
-from Server.logger import setup_logging
-from Server.config import Config
+from server.logger import setup_logging
+from server.config import Config
 from cryptography.fernet import Fernet
 
 # Setup logging
