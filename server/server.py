@@ -10,7 +10,7 @@ from cryptography.fernet import Fernet
 # Setup logging
 logger = setup_logging()
 
-def deserialize_data(data, data_format):
+def deserialise_data(data, data_format):
     if data_format == 'json':
         return json.loads(data)
     elif data_format == 'xml':
@@ -45,7 +45,7 @@ def main():
         if encrypted:
             data = decrypt_data(data, key)
         
-        data = deserialize_data(data, data_format)
+        data = deserialise_data(data, data_format)
         logger.info(f'Received data: {data}')
         
         client_socket.close()
