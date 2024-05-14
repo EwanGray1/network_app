@@ -17,7 +17,7 @@ This project is a Python-based client/server network infrastructure that support
 1. Clone the repository:
 
     ```bash
-    git clone <repository_url>
+    git clone https://github.com/EwanGray1/network_app.git
     cd network_app
     ```
 
