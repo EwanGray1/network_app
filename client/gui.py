@@ -44,7 +44,7 @@ class ClientGUI:
         
         handler = FileHandler(self.file_path)
         data_format = self.transmission_type.get()
-        data = handler.serialize(data_format)
+        data = handler.serialise(data_format)
         
         encrypted = self.encrypt_var.get()
         if encrypted:
