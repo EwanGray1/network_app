@@ -32,13 +32,13 @@ This project is a Python-based client/server network infrastructure that support
 1. Start the server:
 
     ```bash
-    python Server/server.py
+    python server/server.py
     ```
 
 2. Start the client:
 
     ```bash
-    python Client/client.py
+    python client/client.py
     ```
 
 3. Use the GUI to select a file, choose the transmission type, and send the file to the server.
