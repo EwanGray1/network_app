@@ -10,7 +10,7 @@ class FileHandler:
         with open(self.file_path, 'r') as file:
             return file.read()
 
-    def serialize(self, data_format):
+    def serialise(self, data_format):
         data = self.read_file()
         if data_format == 'json':
             return json.dumps(data).encode()
